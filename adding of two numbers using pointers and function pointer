@@ -13,3 +13,6 @@ int main()
     int (*fptr)(int *, int *, int)=add;
     fptr(ptr1,ptr2,sum);
 }
+
+output:
+Adding of two numbers :30
