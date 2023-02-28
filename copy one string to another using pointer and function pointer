@@ -1,0 +1,23 @@
+#include<stdio.h>
+int copy(char s1[], char s2[])
+{
+    
+    char *p=s1;
+    char *q=s2;
+    for(int i=0;p[i]!='\0';i++)
+    {
+        q[i]=p[i];
+        printf("%c",q[i]);
+    }
+
+}
+int main()
+{
+    char s1[15]={"Thundersoft"};
+    char s2[15];
+    int (*fptr)(char [], char [])=copy;
+    fptr(s1,s2);
+}
+
+output:
+Thundersoft
