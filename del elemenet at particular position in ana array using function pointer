@@ -1,0 +1,47 @@
+#include <stdio.h>
+void delele(int arr1[], int pos, int n)
+{
+    int i;
+       for(i=0;i<n;i++)
+            {
+	      printf("element - %d : ",i);
+	      scanf("%d",&arr1[i]);
+	    }
+  printf("\nInput the position where to delete: ");
+  scanf("%d",&pos);
+  i=0;
+  while(i!=pos-1)
+            i++;
+  while(i<n){
+            arr1[i]=arr1[i+1];
+            i++;
+  }
+  n--;
+   printf("\nThe new list is : "); 
+  for(i=0;i<n;i++)
+        {
+		   printf("  %d",arr1[i]);
+		}  
+            printf("\n");
+}
+int main()
+{
+    int arr1[50],pos,n;
+       printf("Input the size of array : ");
+       scanf("%d", &n);
+       printf("Input %d elements in the array in ascending order:\n",n);
+       void (*fptr)(int[], int , int)=delele;
+       fptr(arr1,pos,n);
+}
+
+output:
+Input the size of array : 5
+Input 5 elements in the array in ascending order:
+element - 0 : 10
+element - 1 : 20
+element - 2 : 30
+element - 3 : 40
+element - 4 : 50
+
+Input the position where to delete: 3
+The new list is :   10  20  40  50
