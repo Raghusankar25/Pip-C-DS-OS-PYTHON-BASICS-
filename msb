@@ -1,0 +1,19 @@
+#include <stdio.h>
+#define BITS sizeof(int) * 8 // Total bits required to represent integer
+
+int main()
+{
+    int j, msb;
+
+    /* Input number from user */
+    printf("Enter any number: ");
+    scanf("%d", &j);
+
+    /* Move first bit of 1 to highest order */
+    msb = 1 << (BITS - 1);
+
+    /* Perform bitwise AND with msb and j */
+    (j & msb)?printf("MSB of %d is set (1).", j):printf("MSB of %d is unset (0).", j);
+
+    return 0;
+}
