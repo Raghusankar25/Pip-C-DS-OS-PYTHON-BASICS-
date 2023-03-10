@@ -1,0 +1,6 @@
+Result = 0
+number = int(input('Enter a number: '))
+while number != 0:
+    result += number
+    number = int(input('Enter a number: '))
+print('Result =', Result)
