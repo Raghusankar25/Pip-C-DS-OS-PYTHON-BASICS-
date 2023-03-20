@@ -1,0 +1,32 @@
+a=1
+while(a<=15):
+    if(a==6):
+        break
+    print(a)
+    a=a+1
+print("hlo")
+
+
+o/p=a=1
+2 3 4 5 hlo
+
+
+numbers=[10,20,30]
+for i in numbers:
+    if i>25:
+        break
+    print('the current number',i)
+o/p=the current number 10
+the current number 20
+
+   
+ 
+  for char in "Saikrishna":
+    if char == "s":
+        break
+    print(char)
+print("Over")
+
+o/p=S a i k r  i h h n  a
+
+
