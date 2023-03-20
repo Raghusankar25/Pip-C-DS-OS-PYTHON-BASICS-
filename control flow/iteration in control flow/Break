@@ -21,12 +21,12 @@ the current number 20
 
    
  
-  for char in "Saikrishna":
-    if char == "s":
+  for char in "Raghu":
+    if char == "R":
         break
     print(char)
 print("Over")
 
-o/p=S a i k r  i h h n  a
+o/p=R a g h u
 
 
